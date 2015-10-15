@@ -1,10 +1,10 @@
 <!-- HEADER -->
-<div class="page-header"><h1>Credit Applictaion Form</h1></div>
+<div class="page-header"><h1>Credit Application Form</h1></div>
 <img src="features/landing/img/Monkey-theatre1.jpg">
 <p>^^^ This monkey can sing! </p>
 <h3>Please fill out all fields completely, bitchez!</h3>
 
-<form name="userForm">
+<form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
 
 	<div class="form-group">
 		<label>Name</label>
