@@ -20,12 +20,12 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'features/landing/views/landing.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
+      .when('/inputform', {
+        templateUrl: 'features/inputform/views/inputform.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })

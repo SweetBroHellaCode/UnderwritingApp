@@ -1,0 +1,60 @@
+<!-- HEADER -->
+<div class="page-header"><h1>Credit Applictaion Form</h1></div>
+<img src="features/landing/img/Monkey-theatre1.jpg">
+<p>^^^ This monkey can sing! </p>
+<h3>Please fill out all fields completely, bitchez!</h3>
+
+<form name="userForm">
+
+	<div class="form-group">
+		<label>Name</label>
+		<input type="text" name="name" class="form-control" ng-model="name" required>
+		<p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Your name is required.</p>
+	
+	</div>
+
+	<div class="form-group">
+		<label>Age</label>
+		<input type="text" name="age" class="form-control" ng-model="age" required>
+		<p ng-show="userForm.age.$invalid && !userForm.age.$pristine" class="help-block">Your age is required.</p>	
+	</div>
+
+	<div class="form-group">
+		<label>Phone Number</label>
+		<input type="text" name="phone_number" class="form-control" ng-model="phone_number" required>
+		<p ng-show="userForm.phone_number.$invalid && !userForm.phone_number.$pristine" class="help-block">Your phone number is required.</p>	
+	</div>
+
+	<div class="form-group">
+		<label>Income</label>
+		<input type="text" name="income" class="form-control" ng-model="income" required>
+		<p ng-show="userForm.income.$invalid && !userForm.income.$pristine" class="help-block">Your income is required.</p>	
+	</div>
+
+	<div class="form-group">
+		<label>Debt</label>
+		<input type="text" name="debt" class="form-control" ng-model="debt" required>
+		<p ng-show="userForm.debt.$invalid && !userForm.debt.$pristine" class="help-block">Your debt is required.</p>	
+	</div>
+
+	<div class="form-group">
+		<label>Home Value</label>
+		<input type="text" name="home_value" class="form-control" ng-model="home_value" required>
+		<p ng-show="userForm.home_value.$invalid && !userForm.home_value.$pristine" class="help-block">Your home value is required.</p>	
+	</div>
+
+	<div class="form-group">
+		<label>Car Value</label>
+		<input type="text" name="car_value" class="form-control" ng-model="car_value" required>
+		<p ng-show="userForm.car_value.$invalid && !userForm.car_value.$pristine" class="help-block">Your car value is required.</p>
+	</div>
+
+	<div class="form-group">
+		<label>Savings/Investment Value</label>
+		<input type="text" name="savings_investment_value" class="form-control" ng-model="savings_investment_value" required>
+		<p ng-show="userForm.savings_investment_value.$invalid && !userForm.savings_investment_value.$pristine" class="help-block">Your savings/investment value is required.</p>	
+	</div>
+
+	<button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
