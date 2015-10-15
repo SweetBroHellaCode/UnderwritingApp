@@ -1,0 +1,38 @@
+
+	  <div>
+		<form name = "adminForm" ng-submit="submitForm(userForm.$valid)" novalidate >
+			<div>
+			  AdminID: <input type="AdminID" name="adminID">
+			   </div>
+			   <div>
+				Annual Income Min: 
+				<input type="range" name="amountRangeIncomeMinRange" min="0" max="100000" value="0" oninput="this.form.amountInputIncomeMinNumber.value=this.value" />
+	    		<input type="number" name="amountInputIncomeMinNumber" min="0" max="100000" value="0" oninput="this.form.amountRangeIncomeMinRange.value=this.value" ng-model = "incomeMin"/>
+	    		<br />
+
+				    Annual Income Max:
+
+				        <input type="range" name="amountRangeIncomeMaxRange" min= "0" max="100001" value="0" oninput="this.form.amountInputIncomeMaxNumber.value=this.value" />
+
+    					<input type="number" name="amountInputIncomeMaxNumber" min="0" max="100001" value="0" oninput="this.form.amountRangeIncomeMaxRange.value=this.value" ng-model = "incomeMax" />
+    					<br />
+				</div>
+				<div>
+					Debt Amount Min: 
+					<input type="range" name="amountRangeDebtMinRange" min= "0" max="100001" value="0" oninput="this.form.amountInputDebtMinNumber.value=this.value" />
+    				<input type="number" name="amountInputDebtMinNumber" min="0" max="100001" value="0" oninput="this.form.amountRangeDebtMinRange.value=this.value" />
+    				<br />
+					Debt Amount Max: 
+					<input type="range" name="amountRangeDebtMaxRange" min= "0" max="100001" value="0" oninput="this.form.amountInputDebtMaxNumber.value=this.value" />
+    				<input type="number" name="amountInputDebtMaxNumber" min="0" max="100001" value="0" oninput="this.form.amountRangeDebtMaxRange.value=this.value" />
+				</div>
+				<div>
+					
+
+
+				</div>   
+		</form>
+		  <button type="submitForm" value="Submit" ng-click="update(user)">Submit</button>
+	</div>
+	</body>
+</html>

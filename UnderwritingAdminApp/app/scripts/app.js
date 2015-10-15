@@ -29,6 +29,12 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/admin', {
+        templateUrl: 'features/Admin/views/admin.html',
+        controller: 'AdminCtrl',
+        controllerAs: 'admin'
+      })
+      
       .otherwise({
         redirectTo: '/'
       });
