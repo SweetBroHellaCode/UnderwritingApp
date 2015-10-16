@@ -2,13 +2,13 @@
 	  <div>
 		<form name = "adminForm" ng-submit="submitForm(userForm.$valid)" novalidate>
 			<div>
-			  AdminID: <input type="text" id="AdminId" name="adminID" ng-model = "user.adminId" default="Enter ID Here!">
+			  AdminID: <input type="text" id="AdminId" name="adminID" ng-model = "user.adminId">
 			  <br /> <br />
 			   </div>
 
 			   <div>
 				Annual Income Min: 
-				<input type="range" name="amountRangeIncomeMinRange" min="0" max="100000" value="0" oninput="this.form.amountInputIncomeMinNumber.value=this.value" ng-model = "user.incomeMin"/>
+				<input type="range" name="amountRangeIncomeMinRange" min="0" max="100000" oninput="this.form.amountInputIncomeMinNumber.value=this.value" ng-model = "user.incomeMin" ng-value="10"/>
 	    		<input type="number" name="amountInputIncomeMinNumber" min="0" max="100000" value="0" oninput="this.form.amountRangeIncomeMinRange.value=this.value"/>
 	    		<br />
 				Annual Income Max:
