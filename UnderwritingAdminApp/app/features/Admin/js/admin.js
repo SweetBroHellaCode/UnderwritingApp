@@ -21,8 +21,8 @@ $scope.user = {
   debtMax: 0,
   creditScoreMin: 0,
   creditScoreMax: 0,
-  ageMin: 0,
-  ageMax: 0,
+  ageMin: 18,
+  ageMax: 100,
   adminId: "Enter ID Here!",
 };
 
