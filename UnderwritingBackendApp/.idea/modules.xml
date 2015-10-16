@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UnderwritingBackendApp.iml" filepath="$PROJECT_DIR$/UnderwritingBackendApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UnderwritingBackend.iml" filepath="$PROJECT_DIR$/UnderwritingBackend.iml" />
     </modules>
   </component>
 </project>
